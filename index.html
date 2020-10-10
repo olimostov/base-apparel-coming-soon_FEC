@@ -14,30 +14,36 @@
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
   <body>
-    <header id="header">
-      <img src="./images/logo.svg" alt="logo" />
-    </header>
-    <div class="hero"></div>
-    <main>
-      <div class="main-content">
-        <h1><span>We're</span><br />coming<br />soon</h1>
-        <p>
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our
-          launch deals.
-        </p>
-        <div class="subscribe">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email Address"
-          />
-          <div class="btn"><img src="./images/icon-arrow.svg" alt="" /></div>
-        </div>
+    <div class="flex-container">
+      <div class="container">
+        <header id="header">
+          <img src="./images/logo.svg" alt="logo" />
+        </header>
+        <div id="mobile-img"></div>
+        <main>
+          <div class="main-content">
+            <h1><span>We're</span><br />coming<br />soon</h1>
+            <p>
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals.
+            </p>
+            <div class="subscribe">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+              />
+              <div class="btn">
+                <img src="./images/icon-arrow.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </main>
       </div>
-    </main>
-
+      <div id="desktop-img"></div>
+    </div>
     <footer>
       <p class="attribution">
         Challenge by
@@ -46,5 +52,6 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
