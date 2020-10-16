@@ -1,7 +1,10 @@
 const mobScreen = document.getElementById('mobile-img');
 const deskScreen = document.getElementById('desktop-img');
 const startViewportWidth = window.innerWidth;
-
+const subscribeBtn = document.getElementById('sbscr-btn');
+const errorIcon = document.getElementById('error-icon');
+const errorMsg = document.getElementById('valid-msg');
+const inputField = document.getElementById('email');
 window.onload = function () {
   startViewportWidth >= 800
     ? deskScreen.classList.add('hero')
@@ -18,5 +21,12 @@ function moveImg() {
     mobScreen.classList.add('hero');
   }
 }
-
+function emailValid() {
+  if (email.validity.typeMismatch) {
+    errorIcon.classList.remove('hidden');
+    errorMsg.classList.remove('hidden');
+    inputField.style.border = '2px solid var(--soft-red-primary)';
+  }
+}
 window.onresize = moveImg;
+subscribeBtn.addEventListener('click', emailValid);
