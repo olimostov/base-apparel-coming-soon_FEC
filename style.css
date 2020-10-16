@@ -53,7 +53,7 @@ body {
 .hero {
   height: 250px;
   width: 100%;
-  background: url('/images/hero-mobile.jpg') no-repeat center/cover;
+  background: url('./images/hero-mobile.jpg') no-repeat center/cover;
 }
 .hidden {
   display: none;
@@ -165,7 +165,7 @@ footer {
   .hero {
     height: 800px;
     width: 610px;
-    background: url('/images/hero-desktop.jpg') no-repeat;
+    background: url('./images/hero-desktop.jpg') no-repeat;
   }
 
   /* Main */
