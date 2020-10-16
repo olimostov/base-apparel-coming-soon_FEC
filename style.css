@@ -30,10 +30,6 @@ body {
   justify-content: center;
   background-image: url('./images/icon-arrow.svg');
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-  /*  
-*     btn in active state:
-*     background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)); 
-  */
   height: 45px;
   width: 60px;
   border-radius: 23px;
@@ -167,7 +163,6 @@ footer {
     width: 610px;
     background: url('./images/hero-desktop.jpg') no-repeat;
   }
-
   /* Main */
   main {
     text-align: left;
